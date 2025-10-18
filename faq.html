@@ -3,8 +3,8 @@
 <html lang="en" class="">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Our Spaces - CoWorkHub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ - StudySit</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -51,6 +51,9 @@
     body {
         background-color: var(--color-background-primary);
         color: var(--color-text-primary);
+    }
+    details > summary::-webkit-details-marker {
+        display: none;
     }
 
     @media (max-width: 768px) {
@@ -115,7 +118,6 @@
         </div>
     </nav>
 
-
 <!-- Mobile Navigation Menu - Fixed to show properly -->
 <div class="md:hidden hidden bg-study-accent-cta shadow-lg" id="mobileNav" style="width: 50%; max-width: 200px; position: absolute; right: 0; top: 100%;">
     <div class="container mx-auto px-6 py-6 flex flex-col space-y-4">
@@ -133,39 +135,66 @@
 
   <!-- MAIN CONTENT -->
   <main class="pt-24">
-    <div class="container mx-auto px-6 py-12">
+    <section class="container mx-auto px-6 py-12">
       <header class="text-center mb-16">
-        <h1 class="text-5xl md:text-6xl font-bold text-study-text animate-fade-slide-up opacity-0">Our Spaces</h1>
-        <p class="mt-4 text-lg text-study-text/80 animate-fade-slide-up opacity-0" style="animation-delay: 200ms;">Designed for productivity, comfort, and collaboration.</p>
+        <h1 class="text-5xl md:text-6xl font-bold text-study-text animate-fade-slide-up opacity-0">Frequently Asked Questions</h1>
+        <p class="mt-4 text-lg text-study-text/80 animate-fade-slide-up opacity-0" style="animation-delay: 200ms;">Find answers to common questions about StudySit.</p>
       </header>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="max-w-3xl mx-auto space-y-4">
+        
+        <details class="bg-study-card rounded-lg border border-study-border transition-all duration-300 animate-fade-slide-up opacity-0" style="animation-delay: 400ms;">
+          <summary class="p-6 cursor-pointer font-semibold text-lg list-none flex justify-between items-center">
+            1. What is StudySit?
+            <span class="text-study-accent-cta transform transition-transform duration-300 group-open:rotate-45">+</span>
+          </summary>
+          <div class="px-6 pb-6 text-study-text/80">
+            StudySit is a modern co-working and study space designed for students, freelancers, and professionals. You can book seats, desks, or private offices on an hourly, weekly, or monthly basis at your convenience.
+          </div>
+        </details>
 
-        <!-- Hot Desk -->
-        <div class="bg-study-card border border-study-border rounded-xl p-6 transition-all duration-300 hover:shadow-2xl hover:border-study-accent-cta hover:-translate-y-1 animate-fade-slide-up opacity-0" style="animation-delay: 400ms;">
-          <img src="https://smartway2.com/wp-content/uploads/2020/11/hot-desking-for-the-open-plan-office-1080x675.jpg" alt="Hot Desk" class="w-full h-48 object-cover rounded-lg mb-4">
-          <h3 class="text-2xl font-bold text-study-text mb-2">Hot Desk</h3>
-          <p class="text-study-text/80">Flexible seating in a shared environment. Perfect for freelancers and digital nomads who love variety.</p>
-        </div>
+        <details class="bg-study-card rounded-lg border border-study-border transition-all duration-300 animate-fade-slide-up opacity-0" style="animation-delay: 500ms;">
+          <summary class="p-6 cursor-pointer font-semibold text-lg list-none flex justify-between items-center">
+            2. How do I book a workspace?
+            <span class="text-study-accent-cta transform transition-transform duration-300 group-open:rotate-45">+</span>
+          </summary>
+          <div class="px-6 pb-6 text-study-text/80">
+            You can easily book your seat or office through our website using the “Book Now” button. It redirects you to our Google Form for quick registration and confirmation.
+          </div>
+        </details>
+        
+        <details class="bg-study-card rounded-lg border border-study-border transition-all duration-300 animate-fade-slide-up opacity-0" style="animation-delay: 600ms;">
+          <summary class="p-6 cursor-pointer font-semibold text-lg list-none flex justify-between items-center">
+            3. Are there hourly or monthly passes available?
+            <span class="text-study-accent-cta transform transition-transform duration-300 group-open:rotate-45">+</span>
+          </summary>
+          <div class="px-6 pb-6 text-study-text/80">
+            Yes, StudySit offers flexible pricing plans such as hourly, weekly, and monthly passes depending on your needs.
+          </div>
+        </details>
 
-        <!-- Dedicated Desk -->
-        <div class="bg-study-card border border-study-border rounded-xl p-6 transition-all duration-300 hover:shadow-2xl hover:border-study-accent-cta hover:-translate-y-1 animate-fade-slide-up opacity-0" style="animation-delay: 600ms;">
-          <img src="https://images.squarespace-cdn.com/content/v1/54f54ee5e4b08c831d40bb34/1589058802124-1OQVOP2BP6BE6XAMO7UL/RollerDesk-018a.jpg" alt="Dedicated Desk" class="w-full h-48 object-cover rounded-lg mb-4">
-          <h3 class="text-2xl font-bold text-study-text mb-2">Dedicated Desk</h3>
-          <p class="text-study-text/80">Your own desk reserved daily. Includes storage and 24/7 access for consistent productivity.</p>
-        </div>
+        <details class="bg-study-card rounded-lg border border-study-border transition-all duration-300 animate-fade-slide-up opacity-0" style="animation-delay: 700ms;">
+          <summary class="p-6 cursor-pointer font-semibold text-lg list-none flex justify-between items-center">
+            4. What amenities are included with my booking?
+            <span class="text-study-accent-cta transform transition-transform duration-300 group-open:rotate-45">+</span>
+          </summary>
+          <div class="px-6 pb-6 text-study-text/80">
+            All members enjoy superfast Wi-Fi, comfortable seating, charging points, air conditioning, coffee & refreshments, and a community-driven environment that fosters focus and collaboration.
+          </div>
+        </details>
 
-        <!-- Private Office -->
-        <div class="bg-study-card border border-study-border rounded-xl p-6 transition-all duration-300 hover:shadow-2xl hover:border-study-accent-cta hover:-translate-y-1 animate-fade-slide-up opacity-0" style="animation-delay: 800ms;">
-          <img src="https://images.unsplash.com/photo-1593642634367-d91a135587b5?fit=crop&w=1000&q=80" alt="Private Office" class="w-full h-48 object-cover rounded-lg mb-4">
-          <h3 class="text-2xl font-bold text-study-text mb-2">Private Office</h3>
-          <p class="text-study-text/80">Fully furnished private offices for teams of 1-10. Quiet, secure, and fully serviced.</p>
-        </div>
-
-        <!-- Additional cards can be added here -->
+        <details class="bg-study-card rounded-lg border border-study-border transition-all duration-300 animate-fade-slide-up opacity-0" style="animation-delay: 800ms;">
+          <summary class="p-6 cursor-pointer font-semibold text-lg list-none flex justify-between items-center">
+            5. Can I bring food or beverages?
+            <span class="text-study-accent-cta transform transition-transform duration-300 group-open:rotate-45">+</span>
+          </summary>
+          <div class="px-6 pb-6 text-study-text/80">
+            Yes, you can bring your own snacks and beverages. We also have an in-house café serving coffee and refreshments.
+          </div>
+        </details>
 
       </div>
-    </div>
+    </section>
   </main>
 
   <!-- FOOTER -->

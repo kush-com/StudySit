@@ -1,464 +1,229 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="StudySit - India's premier coworking spac  <!-- HERO SECTION -->
-  <section class="section">
-    <div class="container">
-      <div class="grid grid-2" style="align-items: center; gap: 3rem;">
-        <div class="animate-on-scroll">
-          <h2 style="font-size: 3rem; color: white; margin-bottom: 1rem;">Find Your Perfect Workspace</h2>
-          <p style="font-size: 1.25rem; color: white; margin-bottom: 2rem;">
-            Whether you're a student cramming for exams or a professional building the next big thing, 
-            StudySit provides the perfect environment to be productive.
-          </p>
-          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-            <button class="btn btn-primary btn-lg book-now-btn" data-space-type="Hot Desk" data-price="₹500">
-              <i class="fas fa-calendar-check"></i> Book Now
-            </button>
-            <a href="#features" class="btn btn-secondary btn-lg">
-              <i class="fas fa-arrow-down"></i> Learn More
-            </a>
-          </div>
-        </div>
-        <div class="animate-on-scroll">
-          <img src="MYPHOTO.jpg" alt="Modern coworking space at StudySit" 
-               style="border-radius: 1rem; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FEATURES SECTION -->
-  <section id="features" class="section section-alt">
-    <div class="container">
-      <div class="animate-on-scroll" style="text-align: center; margin-bottom: 3rem;">
-        <h2>Why Choose StudySit?</h2>
-        <p style="font-size: 1.125rem; color: var(--text-secondary); max-width: 600px; margin: 0 auto;">
-          We've designed every aspect of our space to help you be more productive, connected, and successful.
-        </p>
-      </div>
-      
-      <div class="grid grid-3">
-        <div class="card animate-on-scroll">
-          <div class="card-header">
-            <i class="fas fa-wifi" style="font-size: 2rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
-            <h3>Lightning Fast WiFi</h3>
-          </div>
-          <div class="card-body">
-            <p>High-speed internet with 100+ Mbps download speeds. Never worry about connectivity again.</p>
-          </div>
-        </div>
-        
-        <div class="card animate-on-scroll">
-          <div class="card-header">
-            <i class="fas fa-coffee" style="font-size: 2rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
-            <h3>Premium Coffee</h3>
-          </div>
-          <div class="card-body">
-            <p>Unlimited access to freshly brewed coffee, tea, and healthy snacks to keep you energized.</p>
-          </div>
-        </div>
-        
-        <div class="card animate-on-scroll">
-          <div class="card-header">
-            <i class="fas fa-users" style="font-size: 2rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
-            <h3>Vibrant Community</h3>
-          </div>
-          <div class="card-body">
-            <p>Connect with like-minded students and professionals. Build your network while you work.</p>
-          </div>
-        </div>
-        
-        <div class="card animate-on-scroll">
-          <div class="card-header">
-            <i class="fas fa-clock" style="font-size: 2rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
-            <h3>24/7 Access</h3>
-          </div>
-          <div class="card-body">
-            <p>Work on your schedule. Our spaces are accessible round the clock for maximum flexibility.</p>
-          </div>
-        </div>
-        
-        <div class="card animate-on-scroll">
-          <div class="card-header">
-            <i class="fas fa-shield-alt" style="font-size: 2rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
-            <h3>Secure Environment</h3>
-          </div>
-          <div class="card-body">
-            <p>State-of-the-art security systems and lockers to keep your belongings safe.</p>
-          </div>
-        </div>
-        
-        <div class="card animate-on-scroll">
-          <div class="card-header">
-            <i class="fas fa-calendar-alt" style="font-size: 2rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
-            <h3>Flexible Booking</h3>
-          </div>
-          <div class="card-body">
-            <p>Book by the hour, day, week, or month. Pay only for what you use with our flexible plans.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT SECTION -->
-  <section class="about">
-    <h2>Why Choose StudySit?</h2>
-    <p>Whether you're a student or a growing startup, StudySit provides beautifully designed spaces, superfast Wi-Fi, great coffee, and a vibrant community of professionals. Book your seat, desk, or private office — whenever you need it.</p>
-  </section>students and professionals. Book flexible workspaces with high-speed internet, premium amenities, and vibrant community."/>
-  <meta name="keywords" content="coworking space, study space, office rental, shared workspace, student workspace, professional workspace, India"/>
-  <meta name="author" content="StudySit"/>
-  
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="StudySit - Premium Coworking Spaces"/>
-  <meta property="og:description" content="India's first hyperlocal space for students and office workers. Flexible, affordable, and community-driven."/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:image" content="./TECHNOLOGIA.jpg"/>
-  
-  <title>StudySit - Premium Coworking Spaces | Book Your Workspace Today</title>
-  
-  <!-- External CSS -->
-  <link rel="stylesheet" href="css/styles.css">
-  
-  <!-- Font Awesome for Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  
+  <title>CoWorkHub - Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "study-bg": "var(--color-background-primary)",
+            "study-card": "var(--color-background-secondary)",
+            "study-text": "var(--color-text-primary)",
+            "study-accent-cta": "var(--color-accent-cta)",
+            "study-accent-secondary": "var(--color-accent-secondary)",
+            "study-border": "var(--color-border)",
+          },
+          keyframes: {
+            "fade-slide-up": {
+              "0%": { opacity: "0", transform: "translateY(1rem)" },
+              "100%": { opacity: "1", transform: "translateY(0)" },
+            },
+          },
+          animation: {
+            "fade-slide-up": "fade-slide-up 0.8s ease-out forwards",
+          }
+        },
+      },
+      darkMode: "class",
+      plugins: [],
+    }
+  </script>
   <style>
-    /* --- RESET & BASE --- */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+    :root {
+      --color-background-primary: #FFFFFF;
+      --color-background-secondary: #F8F8F8;
+      --color-text-primary: #333333;
+      --color-accent-cta: #FFC72C;
+      --color-accent-secondary: #A9B497;
+      --color-border: #E0E0E0;
+    }
+    .dark {
+      --color-background-primary: #121212;
+      --color-background-secondary: #1E1E1E;
+      --color-text-primary: #F5F5F5;
+      --color-border: #3A3A3A;
     }
 
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f9fafb;
-      color: green;
-      overflow-x: hidden;
+        @media (max-width: 768px) {
+        #mobileNav {
+            width: 50% !important;
+            max-width: 200px;
+            position: absolute;
+            right: 0;
+            top: 100%;
+            transform: translateY(-20px);
+            opacity: 0;
+            transition: all 0.3s ease-in-out;
+            pointer-events: none;
+        }
+        
+        #mobileNav.show {
+            transform: translateY(0);
+            opacity: 1;
+            pointer-events: all;
+        }
     }
-    body {
-  background-image: url('TECHNOLOGIA.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    /* --- HEADER --- */
-    header {
-      background-color: #1f2937;
-      color: white;
-      padding: 20px 0;
-      text-align: center;
-    }
-
-    nav {
-      background-color: #374151;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 15px 0;
-    }
-
-    nav a {
-      color: #fff;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #10b981;
-    }
-
-    /* --- HERO SLIDER --- */
-    .slider {
-      position: relative;
-      overflow: hidden;
-      max-height: 500px;
-    }
-
-    .slides {
-      display: flex;
-      transition: transform 0.8s ease-in-out;
-    }
-
-    .slide {
-      min-width: 100%;
-      transition: opacity 0.8s ease-in-out;
-    }
-
-    .slider-buttons {
-      position: absolute;
-      top: 50%;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      transform: translateY(-50%);
-      padding: 0 20px;
-    }
-
-    .slider-buttons button {
-      background: rgba(0, 0, 0, 0.5);
-      color: white;
-      border: none;
-      font-size: 24px;
-      padding: 10px 15px;
-      cursor: pointer;
-      border-radius: 50%;
-    }
-
-    /* --- ABOUT SECTION --- */
-    .about {
-      max-width: 1100px;
-      margin: 60px auto;
-      padding: 0 20px;
-      text-align: center;
-      animation: fadeIn 1.2s ease-in-out;
-    }
-
-    .about h2 {
-      font-size: 2.2rem;
-      margin-bottom: 20px;
-    }
-
-    .about p {
-      font-size: 1.1rem;
-      color: white;
-    }
-
-    /* --- REVIEWS SECTION --- */
-    .reviews {
-      background-color: #e0f2f1;
-      padding: 60px 20px;
-    }
-
-    .reviews h2 {
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 40px;
-    }
-
-    .review-cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-      max-width: 1100px;
-      margin: 0 auto;
-      animation: fadeInUp 1.2s ease-in-out;
-    }
-
-    .review {
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
-    }
-
-    .review p {
-      color: #374151;
-      font-size: 0.95rem;
-    }
-
-    .review .author {
-      margin-top: 15px;
-      font-weight: bold;
-      color: #10b981;
-    }
-
-    footer {
-      background-color: #1f2937;
-      color: white;
-      text-align: center;
-      padding: 20px 0;
-      margin-top: 40px;
-    }
-
-    /* --- ANIMATIONS --- */
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(60px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @media (max-width: 600px) {
-      .slider-buttons button {
-        font-size: 18px;
-        padding: 8px;
-      }
-    }
+    
   </style>
 </head>
-<body class="bg-image">
+<body class="bg-study-bg text-study-text">
 
-  <!-- HEADER -->
-  <header>
-    <h1><i class="fas fa-laptop-code"></i> Welcome to StudySit</h1>
-    <p>India's first hyperlocal space for students and office workers.</p>
-  </header>
+<!-- HEADER & NAVIGATION -->
+<header class="fixed top-0 w-full bg-study-bg/95 backdrop-blur-sm shadow-sm transition-all duration-300 z-50">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="index.html" class="text-2xl font-bold text-study-text">StudySit</a>
+        
+        <!-- Desktop Navigation (hidden on mobile) -->
+        <div class="hidden md:flex items-center space-x-6">
+            <a href="index.html" class="text-study-text hover:text-study-accent-secondary transition-colors duration-200">Home</a>
+            <a href="about.html" class="text-study-text hover:text-study-accent-secondary transition-colors duration-200">About</a>
+            <a href="spaces.html" class="text-study-text hover:text-study-accent-secondary transition-colors duration-200">Spaces</a>
+            <a href="pricing.html" class="text-study-text hover:text-study-accent-secondary transition-colors duration-200">Pricing</a>
+            <a href="contact.html" class="text-study-text hover:text-study-accent-secondary transition-colors duration-200">Contact</a>
+            <a href="faq.html" class="text-study-text hover:text-study-accent-secondary transition-colors duration-200">FAQ</a>
+        </div>
 
-  <!-- NAVIGATION -->
-  <nav id="main-nav">
-    <div class="nav-container">
-      <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
-      <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
-      <a href="spaces.html"><i class="fas fa-building"></i> Spaces</a>
-      <a href="pricing.html"><i class="fas fa-tag"></i> Pricing</a>
-      <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+        <!-- Right side buttons -->
+        <div class="flex items-center space-x-4">
+            <!-- Book Now button -->
+            <a href="pricing.html#plans" class="bg-study-accent-cta text-study-text px-4 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-200 active:scale-95">Book Now</a>
+            
+            <!-- Mobile menu button - Changed to yellow -->
+            <button class="md:hidden bg-study-accent-cta text-study-text p-2 rounded-lg" id="mobileMenuBtn">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            
+            <!-- Theme toggle -->
+            <button id="theme-toggle" class="p-2 rounded-full transition-colors duration-200 hover:bg-study-accent-secondary/20">
+                <svg id="theme-toggle-dark-icon" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9.003 9.003 0 0015 3a9 9 0 00-9 9c0 4.223 2.91 7.82 6.873 8.783.5.093.5-.213.5-.474V19.5a.5.5 0 00-.5-.5 8.5 8.5 0 01-8.5-8.5 8.5 8.5 0 0110.158-8.135 1 1 0 001.079.136A8.5 8.5 0 0122 10.5c0 1.252-.267 2.44-.736 3.522a.5.5 0 00.182.635l2.518 1.708a.5.5 0 00.69-.635z"/>
+                </svg>
+                <svg id="theme-toggle-light-icon" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M12 5a7 7 0 100 14 7 7 0 000-14z"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Menu - Fixed to show properly -->
+<div class="md:hidden hidden bg-study-accent-cta shadow-lg" id="mobileNav" style="width: 50%; max-width: 200px; position: absolute; right: 0; top: 100%;">
+    <div class="container mx-auto px-6 py-6 flex flex-col space-y-4">
+        <a href="index.html" class="text-study-text font-semibold hover:bg-study-bg/20 py-3 px-4 rounded-lg transition-all duration-200">Home</a>
+        <a href="about.html" class="text-study-text font-semibold hover:bg-study-bg/20 py-3 px-4 rounded-lg transition-all duration-200">About</a>
+        <a href="spaces.html" class="text-study-text font-semibold hover:bg-study-bg/20 py-3 px-4 rounded-lg transition-all duration-200">Spaces</a>
+        <a href="pricing.html" class="text-study-text font-semibold hover:bg-study-bg/20 py-3 px-4 rounded-lg transition-all duration-200">Pricing</a>
+        <a href="contact.html" class="text-study-text font-semibold hover:bg-study-bg/20 py-3 px-4 rounded-lg transition-all duration-200">Contact</a>
+        <a href="faq.html" class="text-study-text font-semibold hover:bg-study-bg/20 py-3 px-4 rounded-lg transition-all duration-200">FAQ</a>
+        <!-- Book Now in mobile menu -->
+        <a href="pricing.html#plans" class="bg-study-bg text-study-text font-semibold py-3 px-4 rounded-lg text-center hover:bg-opacity-90 transition-all duration-200 active:scale-95 mt-4">Book Now</a>
     </div>
-  </nav>
+</div>
+</header>
 
-
-  <!-- ABOUT SECTION -->
-  <section class="about">
-    <h2>Why Choose StudySit?</h2>
-    <p>Whether you’re a student or a growing startup, StudySit provides beautifully designed spaces, superfast Wi-Fi, great coffee, and a vibrant community of professionals. Book your seat, desk, or private office — whenever you need it.</p>
-  </section>
-
-  <!-- REVIEWS SECTION -->
-  <section class="reviews">
-    <h2>What Our Members Say</h2>
-    <div class="review-cards">
-      <div class="review">
-        <p>"I love the energy here! It’s the perfect balance of quiet and collaborative. Plus, the coffee is awesome!"</p>
-        <div class="author">– Sarah T.</div>
+  <!-- HERO SECTION -->
+  <main class="pt-24">
+    <section class="container mx-auto px-6 py-16 text-center">
+      <h1 class="text-5xl md:text-7xl font-bold text-study-text animate-fade-slide-up opacity-0" style="animation-delay: 100ms;">Focus & Flow, Together.</h1>
+      <p class="mt-4 text-lg md:text-xl text-study-text/80 animate-fade-slide-up opacity-0" style="animation-delay: 300ms;">India's first hyperlocal space designed for students and professionals who value community and productivity.</p>
+      <div class="mt-8 animate-fade-slide-up opacity-0" style="animation-delay: 500ms;">
+        <a href="pricing.html#plans" class="bg-study-accent-cta text-study-text px-8 py-4 rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-200 active:scale-95 text-lg">Find Your Space</a>
       </div>
-      <div class="review">
-        <p>"Our team switched to StudySit and productivity went through the roof. The private office is just what we needed."</p>
-        <div class="author">– David R.</div>
-      </div>
-      <div class="review">
-        <p>"I only need a desk a few days a week and StudySit gives me that flexibility. Super easy to book!"</p>
-        <div class="author">– Amina K.</div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
-        <p>&copy; 2025 StudySit. All rights reserved.</p>
-        <div>
-          <a href="https://facebook.com" style="color: white; margin: 0 0.5rem; font-size: 1.25rem;">
-            <i class="fab fa-facebook"></i>
-          </a>
-          <a href="https://twitter.com" style="color: white; margin: 0 0.5rem; font-size: 1.25rem;">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="https://instagram.com" style="color: white; margin: 0 0.5rem; font-size: 1.25rem;">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="https://linkedin.com" style="color: white; margin: 0 0.5rem; font-size: 1.25rem;">
-            <i class="fab fa-linkedin"></i>
-          </a>
+    <!-- REVIEWS SECTION -->
+    <section class="bg-study-card py-20">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center text-study-text mb-12 animate-fade-slide-up opacity-0">What Our Members Say</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-study-bg p-8 rounded-xl shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 animate-fade-slide-up opacity-0" style="animation-delay: 200ms;">
+            <p class="text-study-text/80 italic">"I love the energy here! It’s the perfect balance of quiet and collaborative. Plus, the coffee is awesome!"</p>
+            <div class="mt-4 font-bold text-study-text">- Sarah T.</div>
+          </div>
+          <div class="bg-study-bg p-8 rounded-xl shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 animate-fade-slide-up opacity-0" style="animation-delay: 400ms;">
+            <p class="text-study-text/80 italic">"Our team switched to StudySit and productivity went through the roof. The private office is just what we needed."</p>
+            <div class="mt-4 font-bold text-study-text">- David R.</div>
+          </div>
+          <div class="bg-study-bg p-8 rounded-xl shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 animate-fade-slide-up opacity-0" style="animation-delay: 600ms;">
+            <p class="text-study-text/80 italic">"I only need a desk a few days a week and StudySit gives me that flexibility. Super easy to book!"</p>
+            <div class="mt-4 font-bold text-study-text">- Amina K.</div>
+          </div>
         </div>
       </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-study-card mt-20">
+    <div class="container mx-auto px-6 py-8 text-center text-study-text/60">
+      <p>&copy; 2025 StudySit. All rights reserved.</p>
     </div>
   </footer>
 
-  <!-- Include Modal Components -->
-  <div id="booking-modal" class="modal">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3>Book Your Space</h3>
-        <button class="close-modal">&times;</button>
-      </div>
-      <form id="booking-form">
-        <div class="form-group">
-          <label for="name" class="form-label">Full Name *</label>
-          <input type="text" id="name" name="name" class="form-input" required>
-        </div>
-        
-        <div class="form-group">
-          <label for="email" class="form-label">Email Address *</label>
-          <input type="email" id="email" name="email" class="form-input" required>
-        </div>
-        
-        <div class="form-group">
-          <label for="phone" class="form-label">Phone Number *</label>
-          <input type="tel" id="phone" name="phone" class="form-input" required>
-        </div>
-        
-        <div class="form-group">
-          <label for="space-type" class="form-label">Space Type</label>
-          <select id="space-type" name="space-type" class="form-select" required>
-            <option value="">Select a space</option>
-            <option value="Hot Desk">Hot Desk - ₹500/day</option>
-            <option value="Dedicated Desk">Dedicated Desk - ₹1,200/day</option>
-            <option value="Private Office">Private Office - ₹3,000/day</option>
-            <option value="Meeting Room">Meeting Room - ₹800/hour</option>
-            <option value="Conference Hall">Conference Hall - ₹2,000/hour</option>
-          </select>
-        </div>
-        
-        <div class="form-group">
-          <label for="date" class="form-label">Date *</label>
-          <input type="date" id="date" name="date" class="form-input" required>
-        </div>
-        
-        <div class="form-group">
-          <label for="duration" class="form-label">Duration *</label>
-          <select id="duration" name="duration" class="form-select" required>
-            <option value="">Select duration</option>
-            <option value="Half Day (4 hours)">Half Day (4 hours)</option>
-            <option value="Full Day (8 hours)">Full Day (8 hours)</option>
-            <option value="1 Hour">1 Hour</option>
-            <option value="2 Hours">2 Hours</option>
-            <option value="4 Hours">4 Hours</option>
-            <option value="Weekly">Weekly</option>
-            <option value="Monthly">Monthly</option>
-          </select>
-        </div>
-        
-        <div class="form-group">
-          <label for="special-requests" class="form-label">Special Requests</label>
-          <textarea id="special-requests" name="special-requests" class="form-textarea" 
-                    placeholder="Any special requirements or requests..."></textarea>
-        </div>
-        
-        <div class="form-group">
-          <p><strong>Selected Price: </strong><span id="selected-price">₹500</span></p>
-        </div>
-        
-        <button type="submit" class="btn btn-primary btn-lg">Book Now</button>
-      </form>
-    </div>
-  </div>
+<script>
+    // Dark Mode Toggle
+    const themeToggle = document.getElementById("theme-toggle");
+    const darkIcon = document.getElementById("theme-toggle-dark-icon");
+    const lightIcon = document.getElementById("theme-toggle-light-icon");
 
-  <!-- Loading Overlay -->
-  <div id="loading-overlay" class="loading-overlay">
-    <div class="loading-spinner"></div>
-  </div>
+    // Function to set the theme
+    function setTheme(isDark) {
+        document.documentElement.classList.toggle("dark", isDark);
+        lightIcon.classList.toggle("hidden", !isDark);
+        darkIcon.classList.toggle("hidden", isDark);
+        localStorage.setItem("color-theme", isDark ? "dark" : "light");
+    }
 
-  <!-- Scroll to Top Button -->
-  <button id="scroll-to-top" class="scroll-to-top">
-    <i class="fas fa-arrow-up"></i>
-  </button>
+    // Initial theme check
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const savedTheme = localStorage.getItem("color-theme");
 
-  <!-- JavaScript -->
-  <script src="js/main.js"></script>
+    setTheme(savedTheme === "dark" || (!savedTheme && prefersDark));
+
+    // Theme toggle button listener
+    themeToggle.addEventListener("click", () => {
+        setTheme(!document.documentElement.classList.contains("dark"));
+    });
+
+    // Mobile menu toggle - WITH SMOOTH ANIMATION
+    document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+        const mobileNav = document.getElementById('mobileNav');
+        
+        if (mobileNav.classList.contains('show')) {
+            // Close menu
+            mobileNav.classList.remove('show');
+            setTimeout(() => {
+                mobileNav.classList.add('hidden');
+            }, 300); // Match the transition duration
+        } else {
+            // Open menu
+            mobileNav.classList.remove('hidden');
+            // Small delay to allow display change before animation
+            setTimeout(() => {
+                mobileNav.classList.add('show');
+            }, 10);
+        }
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function(event) {
+        const mobileNav = document.getElementById('mobileNav');
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        
+        if (!mobileNav.contains(event.target) && !mobileMenuBtn.contains(event.target) && mobileNav.classList.contains('show')) {
+            mobileNav.classList.remove('show');
+            setTimeout(() => {
+                mobileNav.classList.add('hidden');
+            }, 300);
+        }
+    });
+</script>
+
 </body>
 </html>
-
-
