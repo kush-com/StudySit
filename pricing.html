@@ -118,6 +118,62 @@
         z-index: 2;
     }
 }
+
+header nav a.logo-container {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px; /* spacing between logo and text */
+    text-decoration: none;
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out; /* smooth scale */
+}
+
+header nav a.logo-container:hover {
+    transform: scale(1.05); /* increase both logo + text smoothly */
+}
+
+.navbar-logo {
+    height: 40px;
+    filter: brightness(0);
+}
+
+.dark .navbar-logo {
+    filter: brightness(0) invert(1);
+}
+
+.navbar-logo {
+    height: clamp(30px, 5vw, 45px); /* min: 30px, scales with screen, max: 45px */
+    filter: brightness(0);
+}
+
+header nav a.logo-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* allows logo and text to break line if needed */
+    gap: 0.4rem;
+}
+
+header nav a.logo-container span {
+    font-size: clamp(14px, 2vw, 20px); /* responsive text */
+}
+   
+@media (max-width: 768px) {
+    .navbar-logo {
+        height: 32px;
+    }
+    header nav a.logo-container span {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-logo {
+        height: 28px;
+    }
+    header nav a.logo-container span {
+        font-size: 12px;
+    }
+}
   </style>
 </head>
 <body class="bg-study-bg text-study-text">
@@ -125,7 +181,10 @@
    <!-- HEADER & NAVIGATION -->
  <header class="fixed top-0 w-full bg-study-bg/95 backdrop-blur-sm shadow-sm transition-all duration-300 z-50">
     <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="index.html" class="text-2xl font-bold text-study-text">StudySit</a>
+        <a href="index.html" class="flex items-center space-x-2 logo-container">
+  <img src="StudySit_logo.svg" class="navbar-logo h-12 w-auto" alt="StudySit">
+  <span class="text-2xl font-bold text-study-text">StudySit</span>
+</a>
         
         <!-- Desktop Navigation (hidden on mobile) -->
 <div class="hidden md:flex items-center space-x-2">
